@@ -1,5 +1,5 @@
 {
-  "name": "y-protocols",
+  "name": "rdy-protocols",
   "version": "1.0.6",
   "description": "Yjs encoding protocols",
   "type": "module",
@@ -80,10 +80,10 @@
     "rollup": "^3.29.2",
     "standard": "^12.0.1",
     "typescript": "^5.2.2",
-    "yjs": "^13.5.6"
+    "rdyjs": "^13.5.6"
   },
   "peerDependencies": {
-    "yjs": "^13.0.0"
+    "rdyjs": "^13.0.0"
   },
   "engines": {
     "npm": ">=8.0.0",
