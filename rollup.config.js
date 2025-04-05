@@ -14,22 +14,6 @@ export default [{
     resolve({ mainFields: ['module', 'browser', 'main'] }),
     commonjs()
   ]
-}, {
-  input: files,
-  output: {
-    dir: './dist',
-    format: 'cjs',
-    sourcemap: true,
-    entryFileNames: '[name].cjs',
-    chunkFileNames: '[name]-[hash].cjs',
-    paths: /** @param {any} path */ path => {
-      if (/^lib0\//.test(path)) {
-        return `lib0/dist/${path.slice(5) + '.cjs'}`
-      }
-      return path
-    }
-  },
-  external: /** @param  {any} id */ id => /^lib0\/|yjs/.test(id)
 },
 {
   input: files,
