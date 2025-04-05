@@ -35,7 +35,7 @@ export default [{
   input: files,
   output: {
     dir: './dist',
-    format: 'mjs',
+    format: 'es',
     sourcemap: true,
     entryFileNames: '[name].mjs',
     chunkFileNames: '[name]-[hash].mjs',
