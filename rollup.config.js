@@ -30,4 +30,21 @@ export default [{
     }
   },
   external: /** @param  {any} id */ id => /^lib0\/|yjs/.test(id)
-}]
+},
+{
+  input: files,
+  output: {
+    dir: './dist',
+    format: 'mjs',
+    sourcemap: true,
+    entryFileNames: '[name].mjs',
+    chunkFileNames: '[name]-[hash].mjs',
+    paths: /** @param {any} path */ path => {
+      if (/^lib0\//.test(path)) {
+        return `lib0/dist/${path.slice(5) + '.mjs'}`
+      }
+      return path
+    }
+  },
+  external: /** @param  {any} id */ id => /^lib0\/|yjs/.test(id)
+},]
