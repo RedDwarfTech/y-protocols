@@ -1,6 +1,6 @@
 {
   "name": "rdy-protocols",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Yjs encoding protocols",
   "type": "module",
   "funding": {
@@ -45,32 +45,32 @@
   "exports": {
     "./package.json": "./package.json",
     "./sync.js": "./sync.js",
-    "./dist/sync.cjs": "./dist/sync.cjs",
+    "./dist/sync.mjs": "./dist/sync.mjs",
     "./sync": {
       "types": "./sync.d.ts",
       "module": "./sync.js",
       "import": "./sync.js",
-      "require": "./dist/sync.cjs"
+      "require": "./dist/sync.mjs"
     },
     "./awareness.js": "./awareness.js",
-    "./dist/awareness.cjs": "./dist/awareness.cjs",
+    "./dist/awareness.mjs": "./dist/awareness.mjs",
     "./awareness": {
       "types": "./awareness.d.ts",
       "module": "./awareness.js",
       "import": "./awareness.js",
-      "require": "./dist/awareness.cjs"
+      "require": "./dist/awareness.mjs"
     },
     "./auth.js": "./auth.js",
-    "./dist/auth.cjs": "./dist/auth.cjs",
+    "./dist/auth.mjs": "./dist/auth.mjs",
     "./auth": {
       "types": "./auth.d.ts",
       "module": "./auth.js",
       "import": "./auth.js",
-      "require": "./dist/auth.cjs"
+      "require": "./dist/auth.mjs"
     }
   },
   "dependencies": {
-    "lib0": "^0.2.102"
+    "rdlib0": "^0.2.103"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.8",
