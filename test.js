@@ -1,8 +1,8 @@
-import { runTests } from 'lib0/testing'
-import * as log from 'lib0/logging'
+import { runTests } from 'rdlib0/testing'
+import * as log from 'rdlib0/logging'
 import * as awareness from './awareness.test.js'
 
-import { isBrowser, isNode } from 'lib0/environment'
+import { isBrowser, isNode } from 'rdlib0/environment'
 
 /* istanbul ignore if */
 if (isBrowser) {

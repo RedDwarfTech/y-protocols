@@ -67,8 +67,8 @@ A communication provider could parse protocols as follows:
 
 ```js
 
-import * as decoding from 'lib0/decoding'
-import * as encoding from 'lib0/encoding'
+import * as decoding from 'rdlib0/decoding'
+import * as encoding from 'rdlib0/encoding'
 import * as sync from 'y-protocols/sync'
 import * as awareness from 'y-protocols/awareness'
 

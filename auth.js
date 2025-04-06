@@ -1,7 +1,7 @@
 
 import * as Y from 'rdyjs' // eslint-disable-line
-import * as encoding from 'lib0/encoding'
-import * as decoding from 'lib0/decoding'
+import * as encoding from 'rdlib0/encoding'
+import * as decoding from 'rdlib0/decoding'
 
 export const messagePermissionDenied = 0
 

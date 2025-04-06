@@ -1,9 +1,10 @@
 /**
  * @module sync-protocol
  */
-
-import * as encoding from 'lib0/encoding'
-import * as decoding from 'lib0/decoding'
+// @ts-ignore
+import * as encoding from 'rdlib0/encoding'
+// @ts-ignore
+import * as decoding from 'rdlib0/decoding'
 import * as Y from 'rdyjs'
 
 /**

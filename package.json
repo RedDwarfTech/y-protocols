@@ -1,6 +1,6 @@
 {
   "name": "rdy-protocols",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Yjs encoding protocols",
   "type": "module",
   "funding": {
