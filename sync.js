@@ -125,7 +125,9 @@ export const readSyncMessage = (decoder, encoder, doc, transactionOrigin) => {
       readUpdate(decoder, doc, transactionOrigin)
       break
     default:
-      throw new Error('Unknown message type')
+      console.error('Unknown message type in sync protocol:' + messageType);
+      const varStr = decoding.readVarString(decoder);
+      console.warn("decoded string:" + varStr);
   }
   return messageType
 }
